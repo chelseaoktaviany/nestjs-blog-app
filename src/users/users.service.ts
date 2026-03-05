@@ -17,8 +17,6 @@ export class UsersService {
     return this.userModel.where('_id', id).first();
   }
 
-  //   async createOne() {}
-
   // async updateOne() {}
 
   async remove(id: ObjectId) {

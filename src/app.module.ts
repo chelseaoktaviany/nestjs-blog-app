@@ -10,6 +10,7 @@ import { UsersModule } from './users/users.module';
 
 // models
 import { User } from './users/users.model';
+import { PostsModule } from './posts/posts.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { User } from './users/users.model';
       global: true,
     }),
     UsersModule,
+    PostsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
